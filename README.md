@@ -19,7 +19,15 @@ The third parameter ranks *City A* based on its distance from the city it is poi
 
 The program then takes the three parameters and inputs them into a neural network, which consists of an input layer with three nodes, four hidden layers with six nodes each, and an output layer with one node. The network evaluates weights or 'Heuristics' for each vertex based on these parameters, and this is done for all vertices.
 
+<p>
+    <img src="https://user-images.githubusercontent.com/98267072/230638500-887d8f37-3b31-4a05-ab4d-bf05a1693f05.png" width="200px"/>
+    <br>
+    <em>Neural Network Architecture</em>
+</p>
+
 Once all vertex weights are evaluated, the vertex with the highest weight is selected as the starting vertex. Then, the highest weighing vertex connected to that vertex is chosen as the next vertex in the path, and this process continues until the entire path from start to finish is generated.
+
+<img src="https://user-images.githubusercontent.com/98267072/230636319-793b1af3-e404-48b2-af1e-0817fc366d0c.gif" width="200px"/>
 
 \* *When a vertex is chosen from a city we make sure to delete all other vertecies from that city to make sure we don't visit that city again*
 
