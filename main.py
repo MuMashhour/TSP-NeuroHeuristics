@@ -1,5 +1,6 @@
 import random  
 import threading
+import time
 import math
 import pygame
 from pygame.locals import *
@@ -34,6 +35,10 @@ backgroundColor = (200, 200, 200)
 line_thickness = 1
 line_color = (50, 100, 255)
 city_color = (0, 0, 0)
+
+populationSize = 20
+generationSize = 100
+mutationRate = 0.1
 
 #program variables
 furthestDist = 0
@@ -242,11 +247,15 @@ def learn():
             # Return the fittest individual in the final population
             return self.population[np.argmin(self.fitness_scores)]
     # Create an instance of the NeuroEvolution class with a population size of 10 and a mutation rate of 0.1
-    ne = NeuroEvolution(population_size=30, mutation_rate=0.1)
+    ne = NeuroEvolution(population_size=populationSize, mutation_rate=mutationRate)
     # Evolve the population for 100 generations using the fitness function defined above
-    fittest_net = ne.evolve(fitness_function, num_generations=1000)
+    fittest_net = ne.evolve(fitness_function, num_generations=generationSize)
 
     weights = fittest_net.state_dict()
+
+    print("-------------------------------------------------------------------- \n")
+    print("fittest Model: \n")
+
     pprint.pprint(weights)
 
 t1 = threading.Thread(target=learn)
@@ -255,4 +264,3 @@ t1.start()
 draw()
 
 t1.join()
-os.system("PAUSE")
