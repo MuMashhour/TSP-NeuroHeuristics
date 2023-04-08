@@ -28,9 +28,10 @@ class NeuralNet(torch.nn.Module):
 
 #init values
 totalCities = 10
+cityPos = [{} for i in range(totalCities)]
 radius = 3
-backgroundColor = (200, 200, 200)
-line_thickness = 1
+backgroundColor = (255, 255, 255)
+line_thickness = 5
 line_color = (50, 100, 255)
 city_color = (0, 0, 0)
 
@@ -40,7 +41,6 @@ mutationRate = 0.1
 
 #program variables
 furthestDist = 0
-cityPos = [{} for i in range(totalCities)]
 cities = [[0 for j in range(totalCities)] for i in range(totalCities)]
 cityDist = [[0 for j in range(totalCities)] for i in range(totalCities)]
 cityRankings = [[0 for j in range(totalCities)] for i in range(totalCities)]
@@ -101,8 +101,7 @@ def draw():
 
             pygame.draw.circle(window, city_color, [cityPos[i]["x"], cityPos[i]["y"]], radius)
 
-            for j in range(line_thickness):
-                pygame.draw.line(window, line_color, [cityPos[pathToDraw[i][0]]["x"] + j, cityPos[pathToDraw[i][0]]["y"] + j], [cityPos[pathToDraw[i][1]]["x"] + j, cityPos[pathToDraw[i][1]]["y"] + j])
+            pygame.draw.line(window, line_color, [cityPos[pathToDraw[i][0]]["x"], cityPos[pathToDraw[i][0]]["y"]], [cityPos[pathToDraw[i][1]]["x"], cityPos[pathToDraw[i][1]]["y"]], line_thickness)
             
             
         pygame.display.flip()
