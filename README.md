@@ -28,7 +28,14 @@ mutationRate = 0.1
 
 You can change these values by modifying the corresponding variables in the train.py script
 
+<p>
+    <img src="https://user-images.githubusercontent.com/98267072/230731929-7c52674d-e972-44b5-b437-8d45c6b04c6f.gif" width="200px"/>
+    <br>
+    <em>Training, Cities: 10. Population: 20, Generations: 100</em>
+</p>
+
 ### How It Works
+
 
 #### (Step 1) City Generation:
 
