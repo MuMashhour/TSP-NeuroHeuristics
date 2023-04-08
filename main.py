@@ -28,10 +28,9 @@ class NeuralNet(torch.nn.Module):
 
 #init values
 totalCities = 10
-cityPos = [{} for i in range(totalCities)]
 radius = 3
 backgroundColor = (255, 255, 255)
-line_thickness = 5
+line_thickness = 3
 line_color = (50, 100, 255)
 city_color = (0, 0, 0)
 
@@ -41,6 +40,7 @@ mutationRate = 0.1
 
 #program variables
 furthestDist = 0
+cityPos = [{} for i in range(totalCities)]
 cities = [[0 for j in range(totalCities)] for i in range(totalCities)]
 cityDist = [[0 for j in range(totalCities)] for i in range(totalCities)]
 cityRankings = [[0 for j in range(totalCities)] for i in range(totalCities)]
