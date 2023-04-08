@@ -16,8 +16,8 @@ By default, the program uses the following initial values:
 #init values
 totalCities = 10
 radius = 3
-backgroundColor = (200, 200, 200)   #gray
-line_thickness = 1
+backgroundColor = (255, 255, 255)   #white
+line_thickness = 3
 line_color = (50, 100, 255)         #blue-ish
 city_color = (0, 0, 0)              #black
 
