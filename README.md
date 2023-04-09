@@ -35,6 +35,11 @@ You can change these values by modifying the corresponding variables in the trai
     <em>Cities: 10, Population: 20</em>
 </p>
 
+After the Model is done training it will be saved under "trained model". You can use the trained Model by running the test.py script:
+```
+python test.py
+```
+
 ### How It Works
 
 
