@@ -40,6 +40,13 @@ After the Model is done training it will be saved under "trained model". You can
 python test.py
 ```
 
+### Solved Examples
+|100 Cities | 50 Cities | 25 Cities | 10 Cities|
+|---|---|---|---|
+|![100 city solved](https://user-images.githubusercontent.com/98267072/230771157-392dcf15-a9ca-48c3-a726-9ff205359ce3.png)|![50 city solved](https://user-images.githubusercontent.com/98267072/230771161-622421d1-6abb-4042-bc2b-655893d6978b.png)|![25 city solved](https://user-images.githubusercontent.com/98267072/230771160-a4275066-33fd-4703-bf4a-e7eb78845726.png)|![10 cities solved](https://user-images.githubusercontent.com/98267072/230771159-48f99014-bdd8-4f58-9189-bf7aef80a942.png)|
+
+\* *They are not perfect but the heuristics used are pretty good. The model used to solve these was trained with the Prameters: Cities: 30, Population: 25, Generations: 1000*
+
 ### How It Works
 
 
