@@ -76,3 +76,11 @@ Once all vertex weights are evaluated, the vertex with the highest weight is sel
 \* *When a vertex is chosen from a city, all other vertecies from that city are deleted to make sure that that city won't get visited again*
 
 #### (Step 3) Neuroevolution:
+The genetic algorithm evolves a population of neural networks, where each network represents a potential solution to the TSP problem.
+
+The population size is set to 20 in our case, which means that there are 20 different neural networks that are evolved simultaneously. The genetic algorithm evaluates the fitness of each network and selects the fittest ones to be used as parents for the next generation. The two parent networks are then combined using crossover and mutation operations to produce a new child network.
+
+The crossover operation combines the weights of the parent networks to produce the weights of the child network. The mutation operation randomly changes some of the weights of the child network to introduce new variations. The resulting child network is then added to the population, and the process is repeated until a new generation of networks is produced.
+
+This entire process is then repeated for a set number of generations, which is set to 100 in this code.
+
