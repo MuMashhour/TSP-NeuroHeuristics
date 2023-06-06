@@ -1,5 +1,5 @@
 # TSP-NeuroHeuristics
-TSP-NeuroHeuristics is a Python project that uses PyTorch and neuroevolution to train a neural network for solving the Traveling Salesman Problem. The network learns to generate heuristics that can approximate optimal solutions to the TSP
+TSP-NeuroHeuristics is an experimental Python project that uses PyTorch and neuroevolution to train a neural network for solving the Traveling Salesman Problem. The network learns to generate heuristics that can approximate optimal solutions to the TSP
 
 ### Usage
 To use this program, you'll need to have Python 3 and PyTorch installed on your system
