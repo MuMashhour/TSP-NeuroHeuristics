@@ -52,13 +52,13 @@ python test.py
 
 #### (Step 1) City Generation:
 
-The program randomly selects a group of cities and determines the distance between each pair of cities. It then assigns **three parameters** to each vertex that represents a path pointing away from a specific city.
+The program randomly selects a group of cities and determines the distance between each pair of cities. It then assigns **three parameters** to each edge that represents a path pointing away from a specific city.
 
-If we consider *City A*, the **first parameter** is the average distance from *City A* to all other cities, which is added to the vertex.
+If we consider *City A*, the **first parameter** is the average distance from *City A* to all other cities, which is added to all edges pointing from *City A*.
 
-The second parameter ranks all cities according to their distance from *City A*, and this ranking is added as the **second parameter** to the vertex that points from *City A* to the corresponding city.
+The second parameter ranks all cities according to their distance from *City A*, and this ranking is added as the **second parameter** to the edge that points from *City A* to the corresponding city.
 
-The third parameter ranks *City A* based on its distance from the city it is pointing to, and this ranking is added as the **third parameter** to the vertex that points from *City A* to the corresponding city.
+The third parameter ranks *City A* based on its distance from the city it is pointing to, and this ranking is added as the **third parameter** to the edge that points from *City A* to the corresponding city.
 
 \* *The Averages are divided by the number of Cites to normalise them*
 
