@@ -64,7 +64,7 @@ The third parameter ranks *City A* based on its distance from the city it is poi
 
 #### (Step 2) Neural Network Evaluation:
 
-The program then takes the three parameters and inputs them into a neural network, which consists of an input layer with three nodes, four hidden layers with six nodes each, and an output layer with one node. The network evaluates weights or 'Heuristics' for each vertex based on these parameters, and this is done for all vertices.
+The program then takes the three parameters and inputs them into a neural network, which consists of an input layer with three nodes, four hidden layers with six nodes each, and an output layer with one node. The network evaluates weights or 'Heuristics' for each edge based on these parameters, and this is done for all edges.
 
 <p>
     <img src="https://user-images.githubusercontent.com/98267072/230638500-887d8f37-3b31-4a05-ab4d-bf05a1693f05.png" width="200px"/>
@@ -72,7 +72,7 @@ The program then takes the three parameters and inputs them into a neural networ
     <em>Neural Network Architecture</em>
 </p>
 
-Once all vertex weights are evaluated, the vertex with the highest weight is selected as the starting vertex. Then, the highest weighing vertex connected to that vertex is chosen as the next vertex in the path, and this process continues until the entire path from start to finish is generated.
+Once all edge weights are evaluated, the edge with the highest weight is selected as the starting edge. Then, the highest weighing efge connected to that edge is chosen as the next edge in the path, and this process continues until the entire path from start to finish is generated.
 
 <p>
     <img src="https://user-images.githubusercontent.com/98267072/230636319-793b1af3-e404-48b2-af1e-0817fc366d0c.gif" width="200px"/>
