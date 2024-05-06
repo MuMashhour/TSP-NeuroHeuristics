@@ -77,10 +77,10 @@ Once all edge weights are evaluated, the edge with the highest weight is selecte
 <p>
     <img src="https://user-images.githubusercontent.com/98267072/230636319-793b1af3-e404-48b2-af1e-0817fc366d0c.gif" width="200px"/>
     <br>
-    <em>Vertex selection/deletion visualisation</em>
+    <em>Edge selection/deletion visualisation</em>
 </p>
 
-\* *When a vertex is chosen from a city, all other vertecies from that city are deleted to make sure that that city won't get visited again*
+\* *When an Edge is chosen from a city, all other Edges from that city are deleted to make sure that that city won't get visited again*
 
 #### (Step 3) Neuroevolution:
 The genetic algorithm evolves a population of neural networks, where each network represents a potential solution to the TSP problem.
